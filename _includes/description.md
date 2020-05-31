@@ -12,9 +12,11 @@ One possible explanation is the lower overall noise level in cities and beyond (
 
 > Would a similar thing also happen under the sea?
 
-# Sources of ocean noise pollution
+# Noise pollution
 
-# Impact of ocean noise pollution
+# Maritime traffic
+
+{% include traffic.html %}
 
 # Digital recognition of marine mammals
 

@@ -23,15 +23,17 @@ As part of safety precautions during the COVID-19 pandemic, many coastal areas d
 
 We investigated the maritime traffic. While AIS data is abundant online, many of the sources do not meet the criteria of openness while some others not yet provide the timeframes required for accurate determination of the changes as results of restrictions caused by the pandemic.
 
-One of the sources that presents the ongoing changes in the maritime traffic can be found at [12]. Comparison of vessels and route density in March 2020 with the same period last year shows a significant reduction in human activity on the European waters. The same source reports a drop in fishing activities by nearly 40% on Western Mediterrean Sea, compared to the previous year.
+One of the sources that presents the ongoing changes in the maritime traffic can be found at \[[12]\]. Comparison of vessels and route density in March 2020 with the same period last year shows a significant reduction in human activity on the European waters. The same source reports a drop in fishing activities by nearly 40% on Western Mediterrean Sea, compared to the previous year.
 
 One can hypothesize this leads to an equivalent reduction in sea water parameters like turbidity and noise pollution. However, we have not obtained the data to sufficiently prove the link as those were not yet available for the required timeframe.
 
 # Digital recognition of marine mammals
 We created a whale detection engine, based on the paper released as a part of ESA’s project SPACE WHALE. A Convolution Neural Network (CNN) was trained to recognize cetaceans on the satellite and aerial pictures.
-Training pictures containing whales were obtained from [17].
+Training pictures containing whales were obtained from \[[17]\].
 
 {% include image.html url="training_whales.png" description="Sample images used to train the neural network. Obtained from the NOAA photo library" %}
+
+{% include image.html url="whale_testing.jpg" description="Sample aerial image used for detection." %}
 
 Enclosed below is a snippet from the training process output. Diminishing loss value can be observed:
 ```
@@ -49,7 +51,7 @@ INFO:tensorflow:Saving checkpoints for 240 into /tmp/tmpeelow2fh/model.ckpt.
 ```
 Such a neural network can be subsequently used on two sets of test aerial images, taken at different points in time, in order to compare number of animal occurences in some specific areas.
 
-Code for the neural network can be found in the [project repository][18].
+Code for the neural network can be found in the [project repository][19].
 
 # Conclusions
 - The pandemic impacts also the marine life, in multiple ways
@@ -85,7 +87,8 @@ Marine mammal presence detection:
 - \[14] [NOAA Kaggle Challenge: Right Whale Recognition][14]
 - \[15] [BelugaSounds: Using machine learning to detect beluga whale calls in hydrophone recordings][15]
 - \[16] [WhaleWatch program][16]
-- \[17] [NOAA photo library]
+- \[17] [NOAA photo library][17]
+- \[18] [Tensorflow detection model zoo][18]
 
 \* the paper is an outcome of the SPACE WHALE project funded by ESA.
 
@@ -107,4 +110,5 @@ Marine mammal presence detection:
 [15]: https://github.com/Microsoft/belugasounds
 [16]: https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/whalewatch
 [17]: https://www.photolib.noaa.gov/Collections
-[18]: https://github.com/HummingWaves/hummingwaves
+[18]: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
+[19]: https://github.com/HummingWaves/hummingwaves

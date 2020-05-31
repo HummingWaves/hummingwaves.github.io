@@ -85,6 +85,7 @@ Marine mammal presence detection:
 - \[14] [NOAA Kaggle Challenge: Right Whale Recognition][14]
 - \[15] [BelugaSounds: Using machine learning to detect beluga whale calls in hydrophone recordings][15]
 - \[16] [WhaleWatch program][16]
+- \[17] [NOAA photo library]
 
 \* the paper is an outcome of the SPACE WHALE project funded by ESA.
 

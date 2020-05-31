@@ -33,7 +33,9 @@ Training pictures containing whales were obtained from \[[17]\].
 
 {% include image.html url="training_whales.png" description="Sample images used to train the neural network. Obtained from the NOAA photo library" %}
 
-{% include image.html url="whale_testing.jpg" description="Sample aerial image used for detection." %}
+{% include image.html url="whale_testing.jpg" description="Aerial image used for testing the neural network, with whales detected." %}
+
+{% include image.html url="whale_testing2.jpg" description="Satellite image used for testing the neural network, with a whale detected despite lower resolution." %}
 
 Enclosed below is a snippet from the training process output. Diminishing loss value can be observed:
 ```
